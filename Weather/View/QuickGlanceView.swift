@@ -22,7 +22,7 @@ struct QuickGlanceView: View {
                             .font(.system(size: 56, weight: .bold))
                         Text("\(weatherData.maxTemp)°/\(weatherData.minTemp)°")
                             .font(.system(size: 14))
-                            .frame(width: (proxy.size.width - 21) / 2)
+                            .frame(width: abs(proxy.size.width - 21) / 2)
                     }
                     Rectangle()
                         .frame(width: 1, height: 100)
@@ -43,7 +43,7 @@ struct QuickGlanceView: View {
                         
                         Text(weatherData.condition)
                             .font(.system(size: 14))
-                            .frame(width: (proxy.size.width - 21) / 2)
+                            .frame(width: abs(proxy.size.width - 21) / 2)
                     }
                     
                 }

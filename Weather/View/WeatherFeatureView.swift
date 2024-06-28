@@ -18,7 +18,7 @@ struct WeatherFeatureView: View {
                     CardView(feature: feature)
                 }
             }
-            .frame(width: .infinity, height: 100)
+            .frame(height: 100)
             .padding(.horizontal)
         }
     }
