@@ -12,6 +12,7 @@ struct WeatherApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .tint(Color.accentColor)
         }
     }
 }
