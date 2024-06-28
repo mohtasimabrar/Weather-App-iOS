@@ -11,8 +11,6 @@
 		F69C97B82C2DB6EB0039E698 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C97B72C2DB6EB0039E698 /* HomeView.swift */; };
 		F69C97BA2C2DB6EF0039E698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69C97B92C2DB6EF0039E698 /* Assets.xcassets */; };
 		F69C97BD2C2DB6EF0039E698 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69C97BC2C2DB6EF0039E698 /* Preview Assets.xcassets */; };
-		F69C97C52C2DBB270039E698 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F69C97C42C2DBB270039E698 /* Alamofire */; };
-		F69C97C72C2DBB270039E698 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F69C97C62C2DBB270039E698 /* AlamofireDynamic */; };
 		F69C97CE2C2DBB930039E698 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C97CD2C2DBB930039E698 /* AppConstants.swift */; };
 		F69C97D02C2DC6C80039E698 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C97CF2C2DC6C80039E698 /* CurrentWeatherModel.swift */; };
 		F69C97D32C2DCFB30039E698 /* WeatherDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C97D22C2DCFB30039E698 /* WeatherDataSourceProtocol.swift */; };
@@ -33,6 +31,7 @@
 		F69C97F32C2F3EF00039E698 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F69C97F22C2F3EF00039E698 /* SVProgressHUD */; };
 		F69C97FB2C2F471C0039E698 /* AtmosphereDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C97FA2C2F471C0039E698 /* AtmosphereDetailsView.swift */; };
 		F69C97FD2C2F476C0039E698 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C97FC2C2F476C0039E698 /* ListView.swift */; };
+		F69C98072C2F537D0039E698 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F69C98062C2F537D0039E698 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,8 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F69C97F32C2F3EF00039E698 /* SVProgressHUD in Frameworks */,
-				F69C97C52C2DBB270039E698 /* Alamofire in Frameworks */,
-				F69C97C72C2DBB270039E698 /* AlamofireDynamic in Frameworks */,
+				F69C98072C2F537D0039E698 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,9 +211,8 @@
 			);
 			name = Weather;
 			packageProductDependencies = (
-				F69C97C42C2DBB270039E698 /* Alamofire */,
-				F69C97C62C2DBB270039E698 /* AlamofireDynamic */,
 				F69C97F22C2F3EF00039E698 /* SVProgressHUD */,
+				F69C98062C2F537D0039E698 /* Alamofire */,
 			);
 			productName = Weather;
 			productReference = F69C97B22C2DB6EB0039E698 /* Weather.app */;
@@ -246,8 +243,8 @@
 			);
 			mainGroup = F69C97A92C2DB6EB0039E698;
 			packageReferences = (
-				F69C97C32C2DBB270039E698 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F69C97F12C2F3EF00039E698 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
+				F69C98052C2F537D0039E698 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = F69C97B32C2DB6EB0039E698 /* Products */;
 			projectDirPath = "";
@@ -505,14 +502,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F69C97C32C2DBB270039E698 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.9.1;
-			};
-		};
 		F69C97F12C2F3EF00039E698 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SVProgressHUD/SVProgressHUD.git";
@@ -521,23 +510,26 @@
 				minimumVersion = 2.3.1;
 			};
 		};
+		F69C98052C2F537D0039E698 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.8.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F69C97C42C2DBB270039E698 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F69C97C32C2DBB270039E698 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		F69C97C62C2DBB270039E698 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F69C97C32C2DBB270039E698 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
 		F69C97F22C2F3EF00039E698 /* SVProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F69C97F12C2F3EF00039E698 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
 			productName = SVProgressHUD;
+		};
+		F69C98062C2F537D0039E698 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69C98052C2F537D0039E698 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

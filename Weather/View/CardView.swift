@@ -22,7 +22,7 @@ struct CardView: View {
                     Image(systemName: feature.type.rawValue)
                         .foregroundStyle(Color.accentColor)
                     Text(feature.value)
-                        .font(.system(size: 18, weight: .medium))
+                        .font(.system(size: 17, weight: .medium))
                 }
             }
             Spacer()

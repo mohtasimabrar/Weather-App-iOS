@@ -24,7 +24,9 @@ struct HomeView: View {
                             QuickGlanceView(weatherData: $viewModel.currentWeatherData)
                                 .padding(.horizontal)
                             WeatherFeatureView(features: $viewModel.currentWeatherData.features)
-                            AtmosphereDetailsView(features: $viewModel.currentWeatherData.features)
+                            if viewModel.currentWeatherData.features.count != 0 {
+                                AtmosphereDetailsView(features: $viewModel.currentWeatherData.features)
+                            }
                         }
                     }
                 }
