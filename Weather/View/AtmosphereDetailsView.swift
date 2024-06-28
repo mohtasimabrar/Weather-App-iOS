@@ -13,7 +13,7 @@ struct AtmosphereDetailsView: View {
     @Binding var features: [WeatherFeatureModel]
     
     var body: some View {
-        VStack(spacing: 5) {
+        VStack(spacing: 10) {
             ForEach($features, id: \.self.id) { feature in
                 ListView(feature: feature)
             }

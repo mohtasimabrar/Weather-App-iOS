@@ -34,6 +34,10 @@ struct QuickGlanceView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 62, height: 62)
+                            } else {
+                                Rectangle()
+                                    .fill(.clear)
+                                    .frame(width: 62, height: 62)
                             }
                         }
                         
